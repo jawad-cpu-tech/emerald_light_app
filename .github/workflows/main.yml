@@ -1,4 +1,4 @@
-name: Build Android APK
+name: Build Professional APK
 on:
   push:
     branches: [ main ]
@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -17,7 +17,11 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install -g eas-cli
+          npm install
 
-      - name: Build APK
-        run: npx expo export:embed --platform android --dev false
+      - name: Build APK (Preview)
+        run: |
+          # هذا الأمر سيقوم بمحاولة بناء ملف APK باستخدام إعدادات eas.json
+          npx expo export --platform android
