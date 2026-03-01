@@ -17,7 +17,10 @@
       "supportsTablet": false,
       "bundleIdentifier": "com.infinitelight.salawat",
       "infoPlist": {
-        "UIBackgroundModes": ["fetch", "remote-notification"]
+        "UIBackgroundModes": [
+          "fetch",
+          "remote-notification"
+        ]
       }
     },
     "android": {
@@ -52,6 +55,11 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0422f0bd-1dd6-4d63-9c9a-6adff556a740"
+      }
     }
   }
 }
