@@ -1,4 +1,4 @@
-name: Build Professional APK
+name: Build APK
 on:
   push:
     branches: [ main ]
@@ -21,7 +21,7 @@ jobs:
           npm install -g eas-cli
           npm install
 
-      - name: Build APK on Expo
+      - name: Build on Expo
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
         run: eas build --platform android --profile preview --non-interactive
