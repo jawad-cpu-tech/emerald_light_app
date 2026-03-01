@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Infinite Light",
-    "slug": "emerald_light_app",
+    "slug": "emeraldlightapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
